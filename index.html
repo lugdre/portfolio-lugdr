@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucien Gendre — Développeur Fullstack</title>
+  <meta name="description"
+    content="Étudiant Bac+5 Expert en Architecture et Développement Logiciel, à la recherche d'une alternance pour concevoir des produits web utiles, robustes et vivants.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="nav.js"></script>
+</head>
+
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"><span class="cursor-label" id="cursorLabel">VOIR</span></div>
+
+  <!-- La navbar est injectée par nav.js (source unique, partagée par toutes les pages) -->
+
+  <section id="hero">
+    <div class="hero-copy">
+      <div class="hero-kicker">Recherche alternance · Bac+5</div>
+      <h1 class="hero-h1">
+        <div class="clip">
+          <div class="hero-line">Lucien</div>
+        </div>
+        <div class="clip">
+          <div class="hero-line">Gendre</div>
+        </div>
+      </h1>
+      <p class="hero-text hero-sub">Étudiant en Bac+5 Expert en Architecture et Développement Logiciel, je cherche une
+        alternance pour concevoir des produits web utiles, robustes et vivants.</p>
+      <div class="hero-actions hero-sub">
+        <a href="#projets" data-hover class="btn-primary">Voir mes projets ↓</a>
+        <a href="mailto:gendrelucien@gmail.com" data-hover class="btn-ghost">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar-bg"></div>
+        <img class="hero-avatar" src="SILHOUETTE/silhouette3D-1.png" alt="Avatar 3D de Lucien">
+        <div class="hero-badge">C'est moi !</div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span class="dot"></span>Scroll pour explorer</div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span class="item">React <span class="star">✦</span></span>
+      <span class="item">JavaScript <span class="star">✦</span></span>
+      <span class="item">HTML <span class="star">✦</span></span>
+      <span class="item">CSS <span class="star">✦</span></span>
+      <span class="item">Git <span class="star">✦</span></span>
+      <span class="item">GitHub <span class="star">✦</span></span>
+      <span class="item">Netlify <span class="star">✦</span></span>
+      <span class="item">Render <span class="star">✦</span></span>
+      <span class="item">React <span class="star">✦</span></span>
+      <span class="item">JavaScript <span class="star">✦</span></span>
+      <span class="item">HTML <span class="star">✦</span></span>
+      <span class="item">CSS <span class="star">✦</span></span>
+      <span class="item">Git <span class="star">✦</span></span>
+      <span class="item">GitHub <span class="star">✦</span></span>
+      <span class="item">Netlify <span class="star">✦</span></span>
+      <span class="item">Render <span class="star">✦</span></span>
+    </div>
+  </div>
+
+  <section id="stack" class="block">
+    <div class="sec-head">
+      <h2 class="sec-title">Ce que je sais faire</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-group">
+        <div class="stack-group-label"><span class="sq"></span>Langages &amp; Frameworks</div>
+        <div class="stack-chips">
+          <span class="stack-chip">HTML</span>
+          <span class="stack-chip">CSS</span>
+          <span class="stack-chip">JavaScript</span>
+          <span class="stack-chip">React</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <div class="stack-group-label"><span class="sq"></span>Outils &amp; Déploiement</div>
+        <div class="stack-chips">
+          <span class="stack-chip">Git</span>
+          <span class="stack-chip">GitHub</span>
+          <span class="stack-chip">Netlify</span>
+          <span class="stack-chip">Render</span>
+          <span class="stack-chip">Docker</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets" class="block">
+    <div class="sec-head">
+      <h2 class="sec-title">Projets</h2>
+    </div>
+    <div class="projects">
+
+      <a class="project-card" data-hover-view href="projets/goupyl-sport/goupyl-sport.html" style="background:#fff">
+        <div class="project-info">
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node</span>
+              <span class="project-tag">Express</span>
+            </div>
+            <h3 class="project-name">Goupyl Sport</h3>
+            <p class="project-desc">Plateforme de mise en relation entre coachs sportifs et salariés pour améliorer la
+              qualité de vie au travail. Matching, réservation et suivi des séances.</p>
+          </div>
+          <div class="project-meta">01 — Étude de cas <span class="arrow">→</span></div>
+        </div>
+        <div class="project-visual">
+          <div class="project-parallax"></div>
+          <div class="project-avatar" style="background-image:url('SILHOUETTE/silhouette3D-6.png')"></div>
+        </div>
+      </a>
+
+      <a class="project-card" data-hover-view data-cursor="blue" href="projets/analyse-ia/analyse-ia-factures.html"
+        style="background:var(--accent)">
+        <div class="project-info">
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">IA</span>
+              <span class="project-tag">OCR</span>
+              <span class="project-tag">Comptabilité</span>
+            </div>
+            <h3 class="project-name">Analyse IA de factures</h3>
+            <p class="project-desc">Application d'analyse automatique de factures, tickets de caisse et reçus par IA,
+              intégrée à un logiciel comptable. Extraction, catégorisation, zéro saisie manuelle.</p>
+          </div>
+          <div class="project-meta">02 — Étude de cas <span class="arrow">→</span></div>
+        </div>
+        <div class="project-visual">
+          <div class="project-parallax"></div>
+          <div class="project-avatar" style="background-image:url('SILHOUETTE/silhouette3D-17.png')"></div>
+        </div>
+      </a>
+
+      <a class="project-card" data-hover-view href="projets/projet-a-venir.html" style="background:#fff">
+        <div class="project-info">
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">Bientôt</span>
+            </div>
+            <h3 class="project-name">Projet à venir</h3>
+            <p class="project-desc">Un emplacement prêt pour un prochain projet d'école ou d'alternance — contenu et
+              visuel à venir.</p>
+          </div>
+          <div class="project-meta">03 — Étude de cas <span class="arrow">→</span></div>
+        </div>
+        <div class="project-visual">
+          <div class="project-parallax"></div>
+          <div class="project-avatar" style="background-image:url('SILHOUETTE/silhouette3D-14.png')"></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="services" class="block">
+    <h2 class="sec-title" style="margin-bottom:64px">Compétences</h2>
+    <div class="services-grid">
+      <div class="service-card" data-hover>
+        <div class="service-num">01 /</div>
+        <h3 class="service-name">Dév. Fullstack</h3>
+        <p class="service-desc">Applications web complètes : React côté interface, back-end et API, données structurées
+          et documentées.</p>
+        <div class="service-img" style="background-image:url('SILHOUETTE/silhouette3D-17.png')"></div>
+      </div>
+      <div class="service-card" data-hover>
+        <div class="service-num">02 /</div>
+        <h3 class="service-name">Architecture</h3>
+        <p class="service-desc">Conception en autonomie : découpage des applications, structuration des données et des
+          flux pour des outils performants et évolutifs.</p>
+        <div class="service-img" style="background-image:url('SILHOUETTE/silhouette3D-3.png')"></div>
+      </div>
+      <div class="service-card" data-hover>
+        <div class="service-num">03 /</div>
+        <h3 class="service-name">Mise en production</h3>
+        <p class="service-desc">Déploiement et hébergement sécurisés (Render, Netlify, Git / GitHub), automatisation des
+          process et protection des données.</p>
+        <div class="service-img" style="background-image:url('SILHOUETTE/silhouette3D-2.png')"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos" class="block">
+    <div class="about-media">
+      <div class="about-media-bg"></div>
+      <img class="about-avatar" src="SILHOUETTE/silhouette3D-5.png" alt="Avatar 3D assis avec un café">
+    </div>
+    <div>
+      <h2 class="sec-title" style="margin-bottom:32px">À propos</h2>
+      <p class="about-p">Développeur chez Apyk depuis 2023 — d'abord développeur web, puis concepteur développeur
+        d'applications. J'y conçois des applications complètes en autonomie, de l'interface React jusqu'à la mise en
+        production sécurisée.</p>
+      <p class="about-p">Déterminé, sérieux et autonome, je structure les données et les flux pour des outils
+        performants et évolutifs. Je vise le titre Expert en Architecture et Développement Logiciel (Bac+5) en
+        alternance.</p>
+      <div class="about-stats">
+        <div class="about-p" style="margin:0">
+          <div class="big">Bac+3</div>Concepteur dév. d'apps
+        </div>
+        <div class="about-p" style="margin:0">
+          <div class="big">React</div>JS · HTML · CSS
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-kicker">Vous recrutez un alternant ?</div>
+    <a href="mailto:gendrelucien@gmail.com" data-hover class="contact-title">Travaillons ensemble</a>
+    <div class="contact-links">
+      <a href="mailto:gendrelucien@gmail.com" data-hover>gendrelucien@gmail.com</a>
+      <a href="tel:+33601324197" data-hover>06 01 32 41 97</a>
+      <span class="contact-loc">Le Mans, France</span>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var fine = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+      function initGsap() {
+        var gsap = window.gsap;
+        if (!gsap || !window.ScrollTrigger) return;
+        gsap.registerPlugin(window.ScrollTrigger);
+
+        if (!reduce) {
+          // Intro reveal
+          gsap.from('.hero-line', { yPercent: 110, duration: 1, ease: 'power4.out', stagger: 0.12, delay: 0.15 });
+          gsap.from('.hero-kicker', { y: -20, opacity: 0, duration: 0.7, ease: 'power3.out' });
+          gsap.from('.hero-sub', { y: 30, opacity: 0, duration: 0.8, stagger: 0.12, delay: 0.6, ease: 'power3.out' });
+          gsap.from('.hero-avatar-wrap', { x: 120, opacity: 0, duration: 1.1, delay: 0.4, ease: 'power4.out' });
+          gsap.from('.nav-reveal', { y: -24, opacity: 0, stagger: 0.06, duration: 0.6, delay: 0.3, ease: 'power3.out' });
+
+          // Scroll-driven
+          gsap.utils.toArray('.sec-title').forEach(function (el) {
+            gsap.from(el, {
+              xPercent: -8, opacity: 0, duration: 0.9, ease: 'power3.out',
+              scrollTrigger: { trigger: el, start: 'top 85%', once: true }
+            });
+          });
+          gsap.utils.toArray('.project-card').forEach(function (el) {
+            gsap.from(el, {
+              y: 90, opacity: 0, duration: 0.9, ease: 'power3.out',
+              scrollTrigger: { trigger: el, start: 'top 88%', once: true }
+            });
+            var par = el.querySelector('.project-parallax');
+            if (par) gsap.to(par, {
+              yPercent: 18, ease: 'none',
+              scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true }
+            });
+            var av = el.querySelector('.project-avatar');
+            if (av) gsap.from(av, {
+              yPercent: 30, ease: 'none',
+              scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true }
+            });
+          });
+          gsap.from('.service-card', {
+            y: 60, opacity: 0, stagger: 0.12, duration: 0.7, ease: 'power3.out',
+            scrollTrigger: { trigger: '#services', start: 'top 75%', once: true }
+          });
+          gsap.from('.stack-group', {
+            y: 60, opacity: 0, stagger: 0.15, duration: 0.7, ease: 'power3.out',
+            scrollTrigger: { trigger: '#stack', start: 'top 75%', once: true }
+          });
+          gsap.from('.about-avatar', {
+            scale: 0.85, opacity: 0, duration: 0.9, ease: 'back.out(1.4)',
+            scrollTrigger: { trigger: '#apropos', start: 'top 70%', once: true }
+          });
+          gsap.from('.about-p', {
+            y: 40, opacity: 0, stagger: 0.1, duration: 0.7, ease: 'power3.out',
+            scrollTrigger: { trigger: '#apropos', start: 'top 70%', once: true }
+          });
+          gsap.from('.contact-title', {
+            scale: 0.9, opacity: 0, duration: 0.8, ease: 'power3.out',
+            scrollTrigger: { trigger: '#contact', start: 'top 75%', once: true }
+          });
+          window.ScrollTrigger.refresh();
+        }
+
+        if (fine) initCursor(gsap);
+      }
+
+      function initCursor(gsap) {
+        var dot = document.getElementById('cursorDot');
+        var ring = document.getElementById('cursorRing');
+        var label = document.getElementById('cursorLabel');
+        var dx = gsap.quickTo(dot, 'x', { duration: 0.12, ease: 'power2.out' });
+        var dy = gsap.quickTo(dot, 'y', { duration: 0.12, ease: 'power2.out' });
+        var rx = gsap.quickTo(ring, 'x', { duration: 0.35, ease: 'power2.out' });
+        var ry = gsap.quickTo(ring, 'y', { duration: 0.35, ease: 'power2.out' });
+        gsap.set([dot, ring], { xPercent: -50, yPercent: -50 });
+        window.addEventListener('mousemove', function (e) {
+          dx(e.clientX); dy(e.clientY); rx(e.clientX); ry(e.clientY);
+          var hoverView = e.target.closest('[data-hover-view]');
+          var hover = e.target.closest('[data-hover]');
+          if (hoverView) {
+            // Solid, non-blended circle so "VOIR" stays readable on any background.
+            var onBlue = !!e.target.closest('[data-cursor="blue"]');
+            var fill = onBlue ? '#f2efe9' : '#111';   // sur du bleu : pastille claire
+            var text = onBlue ? '#111' : '#f2efe9';   // libellé contrasté
+            ring.style.mixBlendMode = 'normal';
+            gsap.to(ring, { scale: 1.9, backgroundColor: fill, borderColor: text, duration: 0.25 });
+            gsap.to(label, { opacity: 1, color: text, duration: 0.2 });
+            gsap.to(dot, { scale: 0, duration: 0.2 });
+          } else if (hover) {
+            ring.style.mixBlendMode = 'difference';
+            gsap.to(ring, { scale: 1.5, backgroundColor: 'rgba(0,0,0,0)', borderColor: '#fff', duration: 0.25 });
+            gsap.to(label, { opacity: 0, duration: 0.2 });
+            gsap.to(dot, { scale: 1.6, duration: 0.2 });
+          } else {
+            ring.style.mixBlendMode = 'difference';
+            gsap.to(ring, { scale: 1, backgroundColor: 'rgba(0,0,0,0)', borderColor: '#fff', duration: 0.25 });
+            gsap.to(label, { opacity: 0, duration: 0.2 });
+            gsap.to(dot, { scale: 1, duration: 0.2 });
+          }
+        });
+      }
+
+      var wait = setInterval(function () {
+        if (window.gsap && window.ScrollTrigger) { clearInterval(wait); initGsap(); }
+      }, 60);
+    })();
+  </script>
+
+</body>
+
+</html>

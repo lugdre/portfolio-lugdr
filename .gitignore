@@ -1,0 +1,16 @@
+# Fichiers système macOS
+.DS_Store
+**/.DS_Store
+
+# Sources lourdes non utilisées par le site (fichiers de travail)
+*.psd
+
+# Dépendances / build éventuels
+node_modules/
+
+# Netlify (état local de la CLI)
+.netlify/
+
+# Éditeurs
+.vscode/
+*.swp

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analyse IA de factures — Étude de cas · Lucien Gendre</title>
+  <meta name="description"
+    content="Application d'analyse automatique de factures, tickets et reçus par IA, intégrée à un logiciel comptable — étude de cas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../nav.js"></script>
+</head>
+
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"><span class="cursor-label" id="cursorLabel">VOIR</span></div>
+
+  <!-- Navbar injectée par nav.js -->
+
+  <!-- ================= HERO ================= -->
+  <section class="pp-hero">
+    <a href="../../index.html#projets" data-hover class="pp-back" data-load>← Retour aux projets</a>
+    <div class="pp-kicker" data-load>Projet 02 · IA &amp; Comptabilité</div>
+    <h1 class="pp-title" data-load>Analyse IA de factures</h1>
+    <p class="pp-tagline" data-load>Analyse automatique de factures, tickets de caisse et reçus par IA, intégrée à un
+      logiciel comptable. Extraction, catégorisation, zéro saisie manuelle.</p>
+    <div class="pp-actions" data-load>
+      <a href="#" data-hover class="btn-primary">Voir le site ↗</a>
+      <a href="#" data-hover class="btn-ghost">Code GitHub ↗</a>
+    </div>
+    <div class="pp-meta" data-load>
+      <div>
+        <div class="k">Rôle</div>
+        <div class="v">Développeur<br>Fullstack</div>
+      </div>
+      <div>
+        <div class="k">Année</div>
+        <div class="v">2024</div>
+      </div>
+      <div>
+        <div class="k">Domaine</div>
+        <div class="v">IA · OCR</div>
+      </div>
+      <div>
+        <div class="k">Stack</div>
+        <div class="v">React ·<br>API IA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COVER ================= -->
+  <div class="pp-cover" data-cursor="blue">
+    <div class="pp-cover-pattern"></div>
+    <img class="pp-cover-avatar" src="../../SILHOUETTE/silhouette3D-17.png" alt="Aperçu Analyse IA de factures">
+  </div>
+
+  <!-- ================= CONTEXTE ================= -->
+  <section class="pp-section">
+    <div class="pp-2col reveal">
+      <div>
+        <div class="pp-eyebrow"><span class="sq"></span>Le contexte</div>
+        <h2 class="pp-h2">Le défi</h2>
+      </div>
+      <div class="pp-body">
+        <p class="pp-lead">La saisie comptable manuelle des factures et reçus est lente, répétitive et source
+          d'erreurs. Chaque document doit être lu, catégorisé, puis reporté à la main.</p>
+        <p>Cette application automatise tout le flux : on dépose un document, l'<strong>IA extrait</strong> les
+          informations clés (montant, TVA, date, fournisseur), les <strong>catégorise</strong>, puis les
+          <strong>intègre directement</strong> au logiciel comptable. Le résultat : plus de saisie manuelle, des
+          données fiables et un gain de temps considérable pour la comptabilité.
+        </p>
+        <p><em>À personnaliser : précise le logiciel comptable ciblé, le volume de documents traités et le rôle exact
+            que tu as tenu.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FONCTIONNALITÉS ================= -->
+  <section class="pp-section alt">
+    <div class="pp-eyebrow reveal"><span class="sq"></span>Ce que j'ai construit</div>
+    <h2 class="pp-h2 reveal">Fonctionnalités</h2>
+    <div class="feature-grid">
+      <div class="feature reveal">
+        <div class="n">01 /</div>
+        <h3>Dépôt de documents</h3>
+        <p>Import de factures, tickets et reçus (photo ou PDF) via une interface simple et rapide.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="n">02 /</div>
+        <h3>Extraction OCR + IA</h3>
+        <p>Lecture automatique des montants, TVA, dates et fournisseurs, même sur des documents imparfaits.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="n">03 /</div>
+        <h3>Catégorisation auto</h3>
+        <p>Classement intelligent des dépenses par catégorie comptable, prêt à être validé.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="n">04 /</div>
+        <h3>Validation humaine</h3>
+        <p>Écran de contrôle pour vérifier et corriger avant intégration — l'IA propose, l'humain confirme.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="n">05 /</div>
+        <h3>Intégration comptable</h3>
+        <p>Envoi des écritures directement dans le logiciel comptable, sans double saisie.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="n">06 /</div>
+        <h3>Zéro saisie manuelle</h3>
+        <p>Un flux de bout en bout qui supprime la ressaisie et fiabilise les données.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STACK ================= -->
+  <section class="pp-section">
+    <div class="pp-eyebrow reveal"><span class="sq"></span>Sous le capot</div>
+    <h2 class="pp-h2 reveal">Stack technique</h2>
+    <div class="pp-stack reveal">
+      <span class="stack-chip">React</span>
+      <span class="stack-chip">JavaScript</span>
+      <span class="stack-chip">OCR</span>
+      <span class="stack-chip">API IA</span>
+      <span class="stack-chip">Node.js</span>
+      <span class="stack-chip">Git</span>
+      <span class="stack-chip">GitHub</span>
+      <!-- Ajoute le modèle / service IA réellement utilisé (ex : API Claude, Tesseract…) -->
+    </div>
+  </section>
+
+  <!-- ================= GALERIE ================= -->
+  <section class="pp-section alt">
+    <div class="pp-eyebrow reveal"><span class="sq"></span>En images</div>
+    <h2 class="pp-h2 reveal">Galerie</h2>
+    <div class="pp-gallery">
+      <div class="shot wide reveal"><img src="uploads/interface-app.png" alt="Interface de l'application"></div>
+      <div class="shot reveal"><img src="uploads/extraction-data.png" alt="Extraction des données par IA"></div>
+      <div class="shot reveal"><img src="uploads/validation.png" alt="Validation des écritures"></div>
+      <div class="shot reveal"><img src="uploads/historic-session.png" alt="Historique des sessions"></div>
+      <div class="shot reveal"><img src="uploads/lot-traité.png" alt="Lot de documents traité"></div>
+      <div class="shot wide reveal"><img src="uploads/export-csv.png" alt="Export CSV vers le logiciel comptable"></div>
+    </div>
+  </section>
+
+  <!-- ================= RÉSULTATS ================= -->
+  <section class="pp-section">
+    <div class="pp-eyebrow reveal"><span class="sq"></span>Ce que j'en retire</div>
+    <h2 class="pp-h2 reveal">Résultats</h2>
+    <div class="pp-stats reveal">
+      <div class="pp-stat">
+        <div class="big">0</div>
+        <div class="lbl">saisie manuelle grâce à l'automatisation</div>
+      </div>
+      <div class="pp-stat">
+        <div class="big">3</div>
+        <div class="lbl">types de documents pris en charge (factures, tickets, reçus)</div>
+      </div>
+      <div class="pp-stat">
+        <div class="big">IA</div>
+        <div class="lbl">extraction + catégorisation de bout en bout</div>
+      </div>
+    </div>
+    <div class="pp-body reveal" style="margin-top:40px;max-width:640px">
+      <p><em>À personnaliser : ajoute tes vrais chiffres (temps gagné, taux de reconnaissance, documents traités) et
+          ce que tu as appris sur l'intégration de l'IA.</em></p>
+    </div>
+  </section>
+
+  <!-- ================= NEXT ================= -->
+  <section class="pp-next">
+    <div class="small">Projet suivant</div>
+    <a href="../projet-a-venir.html" data-hover class="big">Projet à venir →</a>
+  </section>
+
+  <script src="../../cursor.js"></script>
+</body>
+
+</html>
